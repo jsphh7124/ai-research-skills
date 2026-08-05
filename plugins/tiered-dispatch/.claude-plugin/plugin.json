@@ -1,0 +1,9 @@
+{
+  "name": "tiered-dispatch",
+  "version": "0.1.0",
+  "description": "依任務複雜度把程式修改分派給不同模型的 Agent，自己只拆解與審核，省額度",
+  "author": {
+    "name": "黃敦群 (jsphh7124)",
+    "url": "https://github.com/jsphh7124"
+  }
+}

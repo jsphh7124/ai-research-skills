@@ -1,0 +1,9 @@
+{
+  "name": "teaching-manual-builder",
+  "version": "0.1.0",
+  "description": "為教科書章節生成敘事式教師手冊：講稿、討論提問、課堂活動與時間配置",
+  "author": {
+    "name": "黃敦群 (jsphh7124)",
+    "url": "https://github.com/jsphh7124"
+  }
+}
