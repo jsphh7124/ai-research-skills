@@ -48,6 +48,11 @@
       "name": "teaching-manual-builder",
       "source": "./plugins/teaching-manual-builder",
       "description": "為教科書章節生成敘事式教師手冊：講稿、討論提問、課堂活動與時間配置"
+    },
+    {
+      "name": "auto-lit-lite",
+      "source": "./plugins/auto-lit-lite",
+      "description": "文獻通知掃描與免費管道下載：Gmail 期刊通知 → 候選清單勾選 → Scholar/OA/RG/arXiv 免費公開管道下載＋規則命名。零付費會員依賴"
     }
   ]
 }

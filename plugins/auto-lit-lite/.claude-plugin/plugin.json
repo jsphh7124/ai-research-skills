@@ -1,0 +1,9 @@
+{
+  "name": "auto-lit-lite",
+  "version": "0.1.0",
+  "description": "文獻通知掃描與免費管道下載：Gmail 期刊通知（TOC/Scholar Alert/PsycInfo）→ 候選清單勾選 → Scholar/OA/RG/arXiv 免費公開管道下載＋規則命名。零付費會員依賴",
+  "author": {
+    "name": "黃敦群 (jsphh7124)",
+    "url": "https://github.com/jsphh7124"
+  }
+}

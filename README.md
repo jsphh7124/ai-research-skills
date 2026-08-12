@@ -16,6 +16,7 @@
 | `tiered-dispatch` | 依複雜度把程式修改分派給不同模型的 Agent，節省額度 |
 | `taiwan-labor-law-expertise` | 台灣勞動法規諮詢（解僱、工時、工資、職災、勞資爭議） |
 | `teaching-manual-builder` | 為教科書章節生成敘事式教師手冊 |
+| `auto-lit-lite` | 掃描 Gmail 期刊通知找新文獻，經免費合法管道（Scholar/OA/RG/arXiv）下載並規則命名，零付費會員依賴 |
 
 ## 安裝方式一：Claude Code（plugin marketplace，建議）
 
