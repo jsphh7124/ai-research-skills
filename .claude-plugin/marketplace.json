@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "學術研究與教學用 AI skills：研究計畫拷問、學術寫作清理、文獻轉檔、Google 服務自動化等",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "plugins": [
     {
@@ -33,11 +33,6 @@
       "name": "gogcli",
       "source": "./plugins/gogcli",
       "description": "以 gog CLI 從終端機存取 Gmail、Google Calendar、Drive、Sheets，適合自動化與 Agent 資料存取"
-    },
-    {
-      "name": "tiered-dispatch",
-      "source": "./plugins/tiered-dispatch",
-      "description": "依任務複雜度把程式修改分派給不同模型的 Agent，自己只拆解與審核，省額度"
     },
     {
       "name": "taiwan-labor-law-expertise",

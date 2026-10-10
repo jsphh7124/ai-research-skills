@@ -13,7 +13,6 @@
 | `academic-editor` | 潤飾或翻譯 OB/HRM 英文學術稿，避免 AI 指紋詞彙 |
 | `journal-to-md` | 將 PDF、Word、簡報等文件轉為結構化 Markdown |
 | `gogcli` | 從終端機存取 Gmail、Google Calendar、Drive、Sheets |
-| `tiered-dispatch` | 依複雜度把程式修改分派給不同模型的 Agent，節省額度 |
 | `taiwan-labor-law-expertise` | 台灣勞動法規諮詢（解僱、工時、工資、職災、勞資爭議） |
 | `teaching-manual-builder` | 為教科書章節生成敘事式教師手冊 |
 | `auto-lit-lite` | 掃描 Gmail 期刊通知找新文獻，經免費合法管道（Scholar/OA/RG/arXiv）下載並規則命名，零付費會員依賴 |
@@ -50,7 +49,6 @@ cd ai-research-skills
 ## 注意事項
 
 - `gogcli` skill 需另行安裝 [gogcli](https://github.com/steipete/gogcli) 執行檔並完成 Google 帳號授權，詳見該 skill 內文。
-- `tiered-dispatch` 的「外部便宜派工」段落為選配，需本機另有外部 CLI agent（如 Gemini CLI）。
 - Skills 內容以繁體中文為主，設計脈絡為組織行為／人力資源管理領域的學術研究與教學。
 
 ## 授權
