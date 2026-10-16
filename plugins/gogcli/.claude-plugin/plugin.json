@@ -1,6 +1,6 @@
 {
   "name": "gogcli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "以 gog CLI 從終端機存取 Gmail、Google Calendar、Drive、Sheets，適合自動化與 Agent 資料存取",
   "author": {
     "name": "黃敦群 (jsphh7124)",

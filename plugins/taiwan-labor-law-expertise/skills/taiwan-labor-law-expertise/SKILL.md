@@ -342,7 +342,3 @@ description: Provide authoritative guidance on Taiwan labor law for OB/HRM teach
 - 具體個案應諮詢專業勞動律師或主管機關
 - **判例僅供參考,非絕對拘束力**(大陸法系特性,不同於英美法系的判例法)
 - 引用判例時應提供**判決書連結**,方便讀者查閱全文
-
-## 參考資料
-
-詳細法條內容、判例分析、教學模板等,請參閱 `references/` 目錄中的文件。

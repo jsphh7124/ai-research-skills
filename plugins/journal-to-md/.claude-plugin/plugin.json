@@ -1,6 +1,6 @@
 {
   "name": "journal-to-md",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "用 Microsoft MarkItDown 將 PDF、Word、簡報、Excel、圖片、音訊轉為結構化 Markdown",
   "author": {
     "name": "黃敦群 (jsphh7124)",

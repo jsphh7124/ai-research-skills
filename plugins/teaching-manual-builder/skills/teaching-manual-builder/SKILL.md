@@ -31,7 +31,7 @@ Read the entire chapter and extract:
 
 ## Step 2: Narrative Arc Design
 
-Design the teaching sequence as a **story**, not a lecture outline. The manual MUST follow this dramatic structure:
+Design the teaching sequence as a **story**, not a lecture outline. Use this five-act arc as the default shape; adjust act boundaries when the chapter's content calls for it:
 
 ### Structure Template
 
@@ -63,7 +63,7 @@ Design the teaching sequence as a **story**, not a lecture outline. The manual M
   - Preview of next chapter
 ```
 
-**IMPORTANT**: The sequence does NOT need to follow the textbook's order. Reorganize for narrative flow and pedagogical effectiveness.
+The sequence may depart from the textbook's order for narrative flow and pedagogical effectiveness.
 
 ## Step 3: Writing the Manual
 
@@ -97,7 +97,7 @@ The manual must be written as a **complete instructor's script**, not an outline
 
 ### Content Rules
 
-- **All key terms from the chapter MUST appear** in the manual
+- **All key terms from the chapter appear** in the manual
 - **All classic studies** must be described with enough detail for the instructor to narrate them without looking at the textbook
 - **Workplace connections**: Every major concept must include at least one workplace-relevant discussion point or example
 - **No placeholders**: Every activity, question, and transition must be fully written out
@@ -126,21 +126,13 @@ Before delivering, verify:
 
 ## Output Location
 
-Save the completed manual as an artifact:
-- Filename: `chapter{N}_teaching_plan.md`
-- Location: Artifact directory
+Save as `chapter{N}_teaching_plan.md` in the folder the user names; if none is given, ask before saving.
 
 ## Example
 
 For a reference implementation, see:
-- `examples/chapter3_teaching_plan.md` — a complete 120-minute manual for Chapter 3 (Social Cognition) of Aronson et al.'s Social Psychology textbook
+- `examples/chapter3_teaching_plan.md` — a complete 120-minute manual for Chapter 3 (Social Cognition) of Aronson et al.'s Social Psychology textbook. Illustrative only: match its level of scripting detail, not its specific activities or structure.
 
 ## Design Philosophy
 
-The core philosophy behind this skill:
-
-1. **Story over structure**: Students remember narratives, not bullet points
-2. **Experience before theory**: Let students feel a phenomenon before naming it
-3. **Workplace as laboratory**: Working professionals' daily experiences ARE the case studies
-4. **Scripted spontaneity**: The instructor should FEEL natural, but the manual leaves nothing to chance
-5. **Cumulative architecture**: Every segment references previous ones; by the finale, the whole chapter is one connected story
+判斷依據見 `references/rationale.md`.

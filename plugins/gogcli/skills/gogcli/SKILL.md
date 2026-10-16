@@ -1,6 +1,6 @@
 ---
 name: gogcli
-description: 使用 gogcli (gog) 指令列工具存取 Google 服務（Gmail, Calendar, Drive, Sheets 等），適用於自動化腳本與 AI Agent 資料存取。Mac 使用 ~/bin/gog；Windows 使用 gog.exe（需另行安裝）。
+description: 使用 gogcli (gog) 指令列工具存取 Google 服務（Gmail, Calendar, Drive, Sheets 等），適用於自動化腳本與 AI Agent 資料存取。Mac 使用 ~/bin/gog；Windows 使用 %USERPROFILE%\bin\gog.exe。
 ---
 
 # gogcli — Google Suite 終端機存取技能
@@ -9,37 +9,14 @@ description: 使用 gogcli (gog) 指令列工具存取 Google 服務（Gmail, Ca
 
 `gogcli`（指令名稱為 `gog`）是一個開源的 Google Suite CLI 工具，可透過終端機指令直接存取 Gmail、Google Calendar、Google Drive、Google Sheets 等服務。輸出為 JSON 格式，適合 AI Agent 解析與自動化流程整合。
 
-- **版本**：v0.11.0（2026-02-15 發布）
-- **GitHub**：https://github.com/steipete/gogcli
+- **GitHub**：https://github.com/openclaw/gogcli
 - **Mac 安裝路徑**：`~/bin/gog`
-- **Windows 安裝**：下載 `gogcli_0.11.0_windows_amd64.zip` 並加入 PATH
 
 ---
 
-## 安裝（Mac，首次設定）
+## 安裝與版本
 
-```bash
-# 下載並安裝 binary（Apple Silicon M系列）
-mkdir -p ~/bin
-curl -L "https://github.com/steipete/gogcli/releases/download/v0.11.0/gogcli_0.11.0_darwin_arm64.tar.gz" -o /tmp/gogcli.tar.gz
-tar -xzf /tmp/gogcli.tar.gz -C /tmp/
-mv /tmp/gog ~/bin/gog
-chmod +x ~/bin/gog
-
-# 確保 ~/bin 在 PATH 中（加入 ~/.zprofile）
-echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc
-source ~/.zshrc
-
-# 驗證安裝
-gog --version
-```
-
-## 安裝（Windows，首次設定）
-
-1. 下載：https://github.com/steipete/gogcli/releases/download/v0.11.0/gogcli_0.11.0_windows_amd64.zip
-2. 解壓縮，將 `gog.exe` 移至 `C:\Users\<YourName>\bin\`
-3. 將該資料夾加入系統 PATH
-4. 在 PowerShell 中執行 `gog --version` 驗證
+安裝方式見官方 README（https://github.com/openclaw/gogcli）；指令語法以 `gog <service> --help` 現查為準（本檔範例寫於舊版）。
 
 ---
 
@@ -55,7 +32,17 @@ gog auth login
 gog auth status
 ```
 
-詳細 OAuth2 設定步驟請參考官方文件：https://github.com/steipete/gogcli#quick-start
+詳細 OAuth2 設定步驟請參考官方文件：https://github.com/openclaw/gogcli#quick-start
+
+### token 每 7 天過期（刻意維持）
+
+OAuth 用戶端若維持「測試」發布狀態，refresh token 約 7 天失效。任何 gog 指令回 `invalid_grant` 時，不必排查，直接請使用者重新授權：
+
+```
+! ~/bin/gog auth add <your-email> --services user --force-consent
+```
+
+瀏覽器跳出後選自己的帳號，遇「尚未驗證」按「進階 → 前往」，全勾後繼續。完成後重跑原指令驗證。改成正式發布可免去每週重新授權，但 Google 要求在自有網域放首頁與隱私權政策。
 
 ---
 
@@ -125,12 +112,3 @@ gog calendar list --account work        # 用特定帳號執行指令
 3. **文件自動下載**：從 Google Drive 取得最新版本的研究文件或量表
 4. **Gmail 快速搜尋**：在不開啟瀏覽器的情況下搜尋特定郵件
 
----
-
-## 升級指令
-
-```bash
-# Mac：重新下載最新版本（替換舊 binary）
-curl -L "https://github.com/steipete/gogcli/releases/latest/download/gogcli_darwin_arm64.tar.gz" -o /tmp/gogcli.tar.gz
-tar -xzf /tmp/gogcli.tar.gz -C ~/bin/ --overwrite
-```
